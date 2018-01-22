@@ -44,12 +44,69 @@
                             the Creative Commons 4.0.
                         </p>
                         <p class="mt-5">
-                            <a href="#" class="mr-2"><img src="img/google-play.png" class="store-img"/></a>
+                            <a href="#" class="mr-2"><img src="{% static 'img/google-play.png' %}" class="store-img"/></a>
                             <a href="#"><img src="{% static 'img/apple_store.png' %}" class="store-img"/> </a>
                         </p>
                     </div>
                     <div class="col-md-6 pt-5 d-none d-md-block wow fadeInRight">
                         <img class="img-fluid mx-auto d-block" src="{% static 'img/shot-3.png' "/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+{% endblock %}
+
+<!-- Team Section -->
+{% block team%}
+
+        <!--team-->
+        <section class="bg-white" id="team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-8 mx-auto text-center">
+                        <h2 class="text-primary">Our Team</h2>
+                        <p class="lead">
+                            We're a team of three people.
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-md-flex mt-4 text-center">
+                    <div class="col-sm-3 mt-2 wow fadeIn">
+                        <div class="card border-none">
+                            <div class="card-body">
+                                <img src="{% static 'img/team-1.jpg' %}" alt="Male" class="img-team img-fluid rounded-circle"/>
+                                <h5 class="card-title text-primary pt-4">Benny</h5>
+                                <p class="card-text">App Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 mt-2 wow fadeIn">
+                        <div class="card border-none">
+                            <div class="card-body">
+                                <img src="{% static 'img/team-2.jpg' %}" alt="Male" class="img-team img-fluid rounded-circle"/>
+                                <h5 class="card-title text-primary pt-4">Hasime</h5>
+                                <p class="card-text">Ionic Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 mt-2 wow fadeIn">
+                        <div class="card border-none">
+                            <div class="card-body">
+                                <img src="{% static 'img/team-3.jpg' %}" alt="Male" class="img-team img-fluid rounded-circle"/>
+                                <h5 class="card-title text-primary pt-4">Manuel</h5>
+                                <p class="card-text">Android Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 mt-2 wow fadeIn">
+                        <div class="card border-none">
+                            <div class="card-body">
+                                <img src="{% static 'img/team-4.jpg' %}" alt="Male" class="img-team img-fluid rounded-circle"/>
+                                <h5 class="card-title text-primary pt-4">Pete</h5>
+                                <p class="card-text">Android Developer</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
