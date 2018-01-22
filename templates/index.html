@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block header %}
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary sticky-navigation">
+            <a class="navbar-brand" href="#"><strong>APPSTER</strong></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-3">
+                        <a class="nav-link page-scroll" href="#features">Features <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link page-scroll" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link page-scroll" href="#download">Download</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link page-scroll" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+{% endblock %}
+
+{% block main_section %}
+        <!--main section-->
+        <section class="bg-texture hero pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-white wow fadeIn">
+                        <div class="mt-5 pt-5 d-none d-md-block"></div>
+                        <h1>FanEmotion</h1>
+                        <h2>A beautiful <span class="text-orange">screen capturing</span> app that you 
+                            can trust on</h2>
+                        <p class="mt-4 lead">
+                            Fan Emotion is a free Bootstrap 4 app landing page designed by Wired Dots and released under 
+                            the Creative Commons 4.0.
+                        </p>
+                        <p class="mt-5">
+                            <a href="#" class="mr-2"><img src="img/google-play.png" class="store-img"/></a>
+                            <a href="#"><img src="{% static 'img/apple_store.png' %}" class="store-img"/> </a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 pt-5 d-none d-md-block wow fadeInRight">
+                        <img class="img-fluid mx-auto d-block" src="{% static 'img/shot-3.png' "/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+{% endblock %}
